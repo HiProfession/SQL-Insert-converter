@@ -48,7 +48,7 @@ public class HelloController {
 
             String[] columns = br.readLine().split(";");
             for (int i = 0; i < columns.length; i++) {
-                result.append("`").append(columns[i]).append("`");
+                result.append("`").append(columns[i]).append("`").append(",");
             }
             result.append(")")
                     .append(System.lineSeparator())
