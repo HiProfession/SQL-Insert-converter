@@ -57,7 +57,7 @@ public class HelloController {
             while ((line = br.readLine()) != null) {
 
                 // Hoffentlich keine Dates im Datensatz
-                line = line.replace("'", "\"");
+                // line = line.replace("'", "\"");
                 line = line.replace(";", ",");
 
                 result.append("(").append(line).append("),").append(System.lineSeparator());
