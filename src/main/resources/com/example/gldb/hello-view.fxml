@@ -10,7 +10,7 @@
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText" text="Select File"/>
+    <Label fx:id="welcomeText" text="Enter Table Name"/>
     <TextField fx:id="filePath"/>
     <Button onMouseClicked="#onFileChooseClick" text="Choose CSV File"/>
     <Button onAction="#onConvertButtonClick" text="Convert"/>
