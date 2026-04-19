@@ -53,10 +53,10 @@
              <configuration>
                  <name>SQL-Insert-Converter</name>
                  <appVersion>1.0</appVersion>
-                 <vendor>YourCompany</vendor>
+                 <vendor>HiProfession</vendor>
                  <mainClass>com.example.gldb.HelloApplication</mainClass>
-                 <icon>path/to/icon.ico</icon> <!-- optional Windows icon -->
-                 <type>exe</type> <!-- or "exe" for direct executable -->
+                 <!-- icon>path/to/icon.ico</icon> <!-- optional Windows icon -->
+                 <type>exe</type> <!-- "msi" or "exe" for direct executable -->
                  <winMenu>true</winMenu>
                  <winShortcut>true</winShortcut>
                   <winConsole>false</winConsole>
