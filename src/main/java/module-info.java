@@ -1,9 +1,9 @@
-module com.example.gldb {
+module com.example.sqlinsertconv {
     requires javafx.controls;
     requires javafx.fxml;
 
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.gldb to javafx.fxml;
-    exports com.example.gldb;
+    opens com.hiprofession.sqlinsertconv to javafx.fxml;
+    exports com.hiprofession.sqlinsertconv;
 }
