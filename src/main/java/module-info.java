@@ -1,4 +1,4 @@
-module com.example.sqlinsertconv {
+module com.hiprofession.sqlinsertconv {
     requires javafx.controls;
     requires javafx.fxml;
 

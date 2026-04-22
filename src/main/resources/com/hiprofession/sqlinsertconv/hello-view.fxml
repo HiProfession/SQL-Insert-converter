@@ -2,16 +2,22 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
-<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+<VBox xmlns:fx="http://javafx.com/fxml/1" alignment="CENTER" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12"
       fx:controller="com.hiprofession.sqlinsertconv.HelloController">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
 
-    <Label fx:id="welcomeText" text="Enter Table Name"/>
-    <TextField fx:id="filePath"/>
-    <Button onMouseClicked="#onFileChooseClick" text="Choose CSV File"/>
+    <Label fx:id="welcomeText" text="Convert your standard .csv Data Table File into INSERT Statements for SQL"/>
+    <HBox maxWidth="-Infinity" prefHeight="25.0" prefWidth="282.0">
+        <children>
+            <TextField fx:id="filePath" editable="false" focusTraversable="false" maxWidth="-Infinity" prefHeight="25.0"
+                       prefWidth="175.0" text="File Name"/>
+            <Button onMouseClicked="#onFileChooseClick" text="Choose CSV File"/>
+        </children>
+    </HBox>
     <Button onAction="#onConvertButtonClick" text="Convert"/>
     <TextArea fx:id="output" maxHeight="300"/>
 </VBox>

@@ -11,8 +11,8 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>17</maven.compiler.source>
-        <maven.compiler.target>17</maven.compiler.target>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
         <javafx.version>21.0.5</javafx.version>
         <junit.version>5.10.1</junit.version>
     </properties>
@@ -59,9 +59,11 @@
                 <artifactId>javafx-maven-plugin</artifactId>
                 <version>0.0.8</version>
                 <configuration>
-                    <mainClass>com.example.sqlinsertconv/com.hiprofession.sqlinsertconv.HelloApplication</mainClass>
+                    <mainClass>com.hiprofession.sqlinsertconv/com.hiprofession.sqlinsertconv.HelloApplication
+                    </mainClass>
                     <options>
                         <option>--enable-native-access=javafx.graphics</option>
+                        <option>--sun-misc-unsafe-memory-access=allow</option>
                     </options>
                     <launcher>app</launcher>
                     <jlinkZipName>app</jlinkZipName>
